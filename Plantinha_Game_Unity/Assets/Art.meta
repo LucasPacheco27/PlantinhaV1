@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: e8e953b94f6e30246a6d3e6ec66a6a3b
+=======
+<<<<<<<< HEAD:Plantinha_Game_Unity/Assets/Characters.meta
+guid: ee90b9aeae7b0db439b12c3f90e6734c
+========
+guid: f7add2c4bfb7c2443bd2a84972862d83
+>>>>>>>> 9761e7a9739c714aaafa7518ae0de3abdd126e49:Plantinha_Game_Unity/Assets/Art.meta
+>>>>>>> 9761e7a9739c714aaafa7518ae0de3abdd126e49
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

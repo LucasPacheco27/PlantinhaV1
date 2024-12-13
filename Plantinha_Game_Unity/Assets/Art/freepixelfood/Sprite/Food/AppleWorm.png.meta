@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Plantinha_Game_Unity/Assets/Art/freepixelfood/Sprite/Food/AppleWorm.png.meta
 guid: 8fa37c2c8b9bd654c96a4fae10f387a1
+========
+guid: 5d23779897e0b9248b778af6c0a67e1d
+>>>>>>>> 9761e7a9739c714aaafa7518ae0de3abdd126e49:Plantinha_Game_Unity/Assets/Art/Adventurer/Individual Sprites/adventurer-air-attack-3-end-01.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -63,12 +67,13 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 1
+  applyGammaDecoding: 0
   swizzle: 50462976
-  cookieLightType: 1
+  cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
+<<<<<<<< HEAD:Plantinha_Game_Unity/Assets/Art/freepixelfood/Sprite/Food/AppleWorm.png.meta
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -83,6 +88,9 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 2048
+========
+    maxTextureSize: 4096
+>>>>>>>> 9761e7a9739c714aaafa7518ae0de3abdd126e49:Plantinha_Game_Unity/Assets/Art/Adventurer/Individual Sprites/adventurer-air-attack-3-end-01.png.meta
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -98,7 +106,20 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -111,7 +132,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0

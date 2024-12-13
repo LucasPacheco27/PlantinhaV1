@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Plantinha_Game_Unity/Assets/Art/freepixelfood/Sprite/Food/Avocado.png.meta
 guid: 2d996a9f7524c354585e081fdf1c9ada
+========
+guid: ec397682fd0c6b7488afcc5afc0c8daa
+>>>>>>>> 9761e7a9739c714aaafa7518ae0de3abdd126e49:Plantinha_Game_Unity/Assets/Art/Adventurer/Individual Sprites/adventurer-air-attack-3-end-02.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -63,13 +67,19 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
+<<<<<<<< HEAD:Plantinha_Game_Unity/Assets/Art/freepixelfood/Sprite/Food/Avocado.png.meta
   applyGammaDecoding: 1
   swizzle: 50462976
   cookieLightType: 1
+========
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+>>>>>>>> 9761e7a9739c714aaafa7518ae0de3abdd126e49:Plantinha_Game_Unity/Assets/Art/Adventurer/Individual Sprites/adventurer-air-attack-3-end-02.png.meta
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -85,7 +95,11 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
+<<<<<<<< HEAD:Plantinha_Game_Unity/Assets/Art/freepixelfood/Sprite/Food/Avocado.png.meta
     textureCompression: 0
+========
+    textureCompression: 1
+>>>>>>>> 9761e7a9739c714aaafa7518ae0de3abdd126e49:Plantinha_Game_Unity/Assets/Art/Adventurer/Individual Sprites/adventurer-air-attack-3-end-02.png.meta
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -98,7 +112,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -111,7 +125,11 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
+<<<<<<<< HEAD:Plantinha_Game_Unity/Assets/Art/freepixelfood/Sprite/Food/Avocado.png.meta
     textureCompression: 0
+========
+    textureCompression: 1
+>>>>>>>> 9761e7a9739c714aaafa7518ae0de3abdd126e49:Plantinha_Game_Unity/Assets/Art/Adventurer/Individual Sprites/adventurer-air-attack-3-end-02.png.meta
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0

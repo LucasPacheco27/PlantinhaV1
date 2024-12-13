@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: be21796cdaa310046919edf80526c151
+<<<<<<<< HEAD:Plantinha_Game_Unity/Assets/Art/freecutetileset.meta
+guid: c21fff30933d6264194d28a79cb61af8
+========
+guid: 5f5346fb787f0604f83453cf24cbf8ac
+>>>>>>>> 9761e7a9739c714aaafa7518ae0de3abdd126e49:Plantinha_Game_Unity/Assets/Art/freeKnight.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
