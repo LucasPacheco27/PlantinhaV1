@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody2D),typeof(TouchingDirections))]
+[RequireComponent(typeof(Rigidbody2D),typeof(TouchingDirections), typeof(Damageable))]
 public class Knight : MonoBehaviour
 {
     public float walkSpeed = 3f;
@@ -15,6 +15,7 @@ public class Knight : MonoBehaviour
     Rigidbody2D rb;
     TouchingDirections touchingDirections;
     Animator animator;
+    Damageable damageable;
 
     public enum WalkableDirection { Right, Left}
 
@@ -67,6 +68,7 @@ public class Knight : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         touchingDirections = GetComponent<TouchingDirections>();
         animator = GetComponent<Animator>();
+        damageable = GetComponent<Damageable>();
     }
     void Update()
     {
@@ -80,12 +82,15 @@ public class Knight : MonoBehaviour
             FlipDirection();
         }
 
-        // Attack Mechanic: Disable the walking mechanics from the knight during attack animations
-        if (canMove)
-            rb.velocity = new Vector2(walkSpeed * walkDirectionVector.x, rb.velocity.y);
-        else
-            // Attack Mechanic: Slide effect when attack is trigger to make the animation looking better.
-            rb.velocity = new Vector2(Mathf.Lerp(rb.velocity.x, 0, walkStopRate), rb.velocity.y);
+        if(!damageable.LockVelocity)
+        {
+            // Attack Mechanic: Disable the walking mechanics from the knight during attack animations
+            if (canMove)
+                rb.velocity = new Vector2(walkSpeed * walkDirectionVector.x, rb.velocity.y);
+            else
+                // Attack Mechanic: Slide effect when attack is trigger to make the animation looking better.
+                rb.velocity = new Vector2(Mathf.Lerp(rb.velocity.x, 0, walkStopRate), rb.velocity.y);
+        }
     }
 
     private void FlipDirection()
@@ -101,4 +106,9 @@ public class Knight : MonoBehaviour
             Debug.LogError("Current Walkable direction is not set to legal values of right or left");
         }
     }
+    public void OnHit(int damage, Vector2 knockback)
+    {
+        rb.velocity = new Vector2(knockback.x, rb.velocity.y + knockback.y);
+    }
+
 }

@@ -223,14 +223,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 6339554146589576277, guid: 1a1b16af64699c1439d48976ea8e1f6b, type: 3}
-      propertyPath: isInvencible
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6339554146589576277, guid: 1a1b16af64699c1439d48976ea8e1f6b, type: 3}
-      propertyPath: invencibilityTime
-      value: 0.27
-      objectReference: {fileID: 0}
     - target: {fileID: 6571201516302445548, guid: 1a1b16af64699c1439d48976ea8e1f6b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.44
@@ -5636,17 +5628,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!114 &999239157 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4668233975477874473, guid: 5bdf309688fbb9d4c8853de58257c6b5, type: 3}
-  m_PrefabInstance: {fileID: 1131357675520874158}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8faa152663ac29f4d8d3c1764b7b1295, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1116621635 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6571201516302445548, guid: 1a1b16af64699c1439d48976ea8e1f6b, type: 3}
@@ -9875,18 +9856,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -7655621186013728427, guid: 5bdf309688fbb9d4c8853de58257c6b5, type: 3}
-      propertyPath: walkSpeed
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: -7655621186013728427, guid: 5bdf309688fbb9d4c8853de58257c6b5, type: 3}
-      propertyPath: attackZone
-      value: 
-      objectReference: {fileID: 999239157}
-    - target: {fileID: 2047848136571667270, guid: 5bdf309688fbb9d4c8853de58257c6b5, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 2122159915170324624, guid: 5bdf309688fbb9d4c8853de58257c6b5, type: 3}
       propertyPath: m_Name
       value: KnightEnemy
