@@ -10,7 +10,8 @@ public class Knight : MonoBehaviour
     
     // Attack Variables
     public float walkStopRate = 0.05f; //WalkStopRate is the value for the sliding effect of the knight when attack is triggered
-    public DetectionZone attackZone; 
+    public DetectionZone attackZone;
+    public DetectionZone cliffDetectionZone;
 
     Rigidbody2D rb;
     TouchingDirections touchingDirections;
@@ -62,6 +63,11 @@ public class Knight : MonoBehaviour
         }
     }
 
+    public float AttackCooldown { get {
+            return animator.GetFloat(AnimationStrings.attackCooldown);
+        } private set {
+            animator.SetFloat(AnimationStrings.attackCooldown, MathF.Max(value, 0));
+        } }
 
     private void Awake()
     {
@@ -73,6 +79,11 @@ public class Knight : MonoBehaviour
     void Update()
     {
         HasTarget = attackZone.detectedColliders.Count > 0;
+
+        if (AttackCooldown > 0)
+        {
+            AttackCooldown -= Time.deltaTime;
+        }
     }
 
     private void FixedUpdate()
@@ -111,4 +122,11 @@ public class Knight : MonoBehaviour
         rb.velocity = new Vector2(knockback.x, rb.velocity.y + knockback.y);
     }
 
+    public void OnCliffDetected()
+    {
+        if (touchingDirections.IsGrounded)
+        {
+            FlipDirection();
+        }
+    }
 }
